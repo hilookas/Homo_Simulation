@@ -215,14 +215,14 @@ public class ImageSynthesis : MonoBehaviour
 
 			var color = ColorEncoding.EncodeIDAsColor(id);
 
-			if (tag == "LabelNoColor")
-				color = new Color32(0, 0, 0, 255);
-			else if (tag == "LabelNormalBorder")
-				color = new Color32(1 << 4, 1 << 4, 1 << 4, 255);
-			else if (tag == "LabelConeBorder")
-				color = new Color32(2 << 4, 2 << 4, 2 << 4, 255);
-			else if (tag == "LabelBypassSign")
-				color = new Color32(3 << 4, 3 << 4, 3 << 4, 255);
+			// if (tag == "LabelNoColor")
+			// 	color = new Color32(0, 0, 0, 255);
+			// else if (tag == "LabelNormalBorder")
+			// 	color = new Color32(1 << 4, 1 << 4, 1 << 4, 255);
+			// else if (tag == "LabelConeBorder")
+			// 	color = new Color32(2 << 4, 2 << 4, 2 << 4, 255);
+			// else if (tag == "LabelBypassSign")
+			// 	color = new Color32(3 << 4, 3 << 4, 3 << 4, 255);
 
 			mpb.SetColor("_ObjectColor", color);
 			mpb.SetColor("_CategoryColor", ColorEncoding.EncodeLayerAsColor(layer));
